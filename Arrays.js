@@ -11,7 +11,7 @@ console.log(lastElement2);
 //Write a JS program that will join the following array elements into a string
 //myPets = ["Cow", "Bird", "Snake", "Dog"];
 let myPets = ["Cow","Bird","Snake","Dog"];
-let joined= myPets.join();
+let joined= myPets.join('');
 console.log(joined)
 
 //Write a JS script to sort the following array items
@@ -29,7 +29,7 @@ function removeDuplicates(arr){
 }
 console.log(removeDuplicates(arr));
 function duplicates(arr){
-    return arr.filter((item,index)=> arr.indexOf(item)===index)
+    return arr.filter((item,index)=> arr.indexOf(item)!==index)
 }
 console.log(duplicates(arr));
 
@@ -37,7 +37,7 @@ console.log(duplicates(arr));
 //"way"
 //If the word is present, console it else console "the search word was not found"
 let arr5 = ["the", "way", "x", 4];
-    if (arr=>"way"){
+    if (arr5=>"way"){
         console.log("way");
     }
     else{
